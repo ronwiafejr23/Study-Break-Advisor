@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Break Advisor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6fb;
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+    main {
+      background: white;
+      max-width: 420px;
+      width: 100%;
+      padding: 24px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #0b2a5b;
+      margin-top: 0;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      box-sizing: border-box;
+      margin-bottom: 12px;
+    }
+    button {
+      background-color: #d45206;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #163f82;
+    }
+    #result {
+      margin-top: 16px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Study Break Advisor</h1>
+    <p>Find out if it's time to take a break.</p>
+
+    <label for="minutesInput">Minutes studied without a break:</label>
+    <input type="number" id="minutesInput" placeholder="e.g. 45">
+
+    <button id="checkBtn">Get Advice</button>
+
+    <p id="result"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
